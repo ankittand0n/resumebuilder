@@ -1,0 +1,50 @@
+{
+  "name": "John Doe",
+  "title": "",
+  "contact": {
+    "location": "",
+    "phone": "",
+    "email": "john.doe@example.com",
+    "linkedin": ""
+  },
+  "summary": "",
+  "experience": [
+    {
+      "company": "",
+      "role": "",
+      "location": "",
+      "period": "",
+      "projects": [
+        {
+          "name": "",
+          "client": "",
+          "period": "",
+          "achievements": []
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "",
+      "degree": "",
+      "period": ""
+    }
+  ],
+  "skills": {
+    "cloud": [],
+    "java": [],
+    "spring_framework": [],
+    "database": [],
+    "tools": [],
+    "monitoring_and_logging": []
+  },
+  "certifications": [
+    {
+      "name": "",
+      "issuer": "",
+      "link": ""
+    }
+  ],
+  "languages": []
+}
