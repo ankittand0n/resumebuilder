@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Manager</title>
+</head>
+<body>
+    <h1>Resume Manager</h1>
+
+    <!-- Add New Job -->
+    <section>
+        <h2>Add New Job</h2>
+        <form id="addJobForm">
+            <label for="jobLink">Job Link:</label><br>
+            <input type="url" id="jobLink" name="jobLink" required><br><br>
+            
+            <label for="jobDescription">Job Description:</label><br>
+            <textarea id="jobDescription" name="jobDescription" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Add Job</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- List Jobs -->
+    <section>
+        <h2>Jobs</h2>
+        <div id="jobList">
+            <!-- Jobs will be displayed here -->
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- Tailor Resume -->
+    <section>
+        <h2>Tailor Resume</h2>
+        <form id="tailorResumeForm">
+            <label for="jobId">Job ID:</label><br>
+            <input type="number" id="jobId" name="jobId" required><br><br>
+            
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <script>
+        const API_BASE_URL = "http://localhost:3000"; // Replace with your backend URL
+
+        // Fetch and display jobs
+        async function fetchJobs() {
+            const response = await fetch(`${API_BASE_URL}/jobs`);
+            const jobs = await response.json();
+            
+            const jobListDiv = document.getElementById("jobList");
+            jobListDiv.innerHTML = ""; // Clear existing jobs
+            
+            jobs.forEach(job => {
+                const jobDiv = document.createElement("div");
+                jobDiv.innerHTML = `
+                    <p>
+                        <strong>ID:</strong> ${job.id} <br>
+                        <strong>Link:</strong> <a href="${job.link}" target="_blank">${job.link}</a> <br>
+                        <strong>Description:</strong> ${job.description} <br>
+                        <strong>Status:</strong> ${job.status} <br>
+                        <strong>Resumes:</strong> ${job.resumes.join(", ")} <br>
+                    </p>
+                `;
+                jobListDiv.appendChild(jobDiv);
+            });
+        }
+
+        // Add a new job
+        document.getElementById("addJobForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            
+            const jobLink = document.getElementById("jobLink").value;
+            const jobDescription = document.getElementById("jobDescription").value;
+
+            await fetch(`${API_BASE_URL}/jobs`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ link: jobLink, description: jobDescription })
+            });
+
+            fetchJobs(); // Refresh the job list
+        });
+
+        // Tailor a resume
+        document.getElementById("tailorResumeForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+
+            const jobId = document.getElementById("jobId").value;
+
+            await fetch(`${API_BASE_URL}/jobs/${jobId}/tailor`, {
+                method: "POST"
+            });
+
+            alert(`Resume for Job ID ${jobId} has been tailored!`);
+        });
+
+        // Initial load of jobs
+        fetchJobs();
+    </script>
+</body>
+</html>

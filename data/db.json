@@ -1,0 +1,48 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "link": "https://example.com/job1",
+      "description": "Looking for a cloud engineer with expertise in Kubernetes and Docker.",
+      "status": "applied",
+      "resumes": [
+        "resume1.json"
+      ]
+    },
+    {
+      "id": 2,
+      "link": "https://example.com/job2",
+      "description": "Seeking a full-stack developer with strong JavaScript skills.",
+      "status": "draft",
+      "resumes": []
+    },
+    {
+      "id": 3,
+      "link": "https://example.com/job1",
+      "description": "Looking for a cloud engineer with expertise in Kubernetes and Docker.",
+      "status": "draft",
+      "resumes": []
+    },
+    {
+      "id": 4,
+      "link": "https://example.com/job1",
+      "description": "Looking for a cloud engineer with expertise in Kubernetes and Docker.",
+      "status": "draft",
+      "resumes": []
+    },
+    {
+      "id": 5,
+      "link": "https://example.com/job1",
+      "description": "Looking for a cloud engineer with expertise in Kubernetes and Docker.",
+      "status": "draft",
+      "resumes": []
+    },
+    {
+      "id": 6,
+      "link": "https://example.com/job1",
+      "description": "Looking for a backend developer.",
+      "status": "draft",
+      "resumes": []
+    }
+  ]
+}

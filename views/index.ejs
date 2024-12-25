@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Manager</title>
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+    <h1>Resume Manager</h1>
+
+    <!-- Add Job Form -->
+    <section>
+        <h2>Add New Job</h2>
+        <form id="addJobForm">
+            <label for="jobLink">Job Link:</label><br>
+            <input type="url" id="jobLink" required><br><br>
+
+            <label for="jobDescription">Job Description:</label><br>
+            <textarea id="jobDescription" rows="4" required></textarea><br><br>
+
+            <button type="submit">Add Job</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Job List -->
+    <section>
+        <h2>Job List</h2>
+        <div id="jobList">
+            <% jobs.forEach(job => { %>
+                <div>
+                    <p>
+                        <strong>ID:</strong> <%= job.id %><br>
+                        <strong>Link:</strong> <a href="<%= job.link %>" target="_blank"><%= job.link %></a><br>
+                        <strong>Description:</strong> <%= job.description %><br>
+                        <strong>Status:</strong> <%= job.status %><br>
+                        <strong>Resumes:</strong> <%= job.resumes.join(', ') %><br>
+                    </p>
+                </div>
+            <% }); %>
+        </div>
+    </section>
+
+    <script>
+        const socket = io();
+
+        // Add Job Form Submission
+        document.getElementById('addJobForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+
+            const jobLink = document.getElementById('jobLink').value;
+            const jobDescription = document.getElementById('jobDescription').value;
+
+            const response = await fetch('/jobs', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ link: jobLink, description: jobDescription }),
+            });
+
+            if (response.ok) {
+                alert('Job added successfully!');
+                document.getElementById('addJobForm').reset();
+            } else {
+                alert('Failed to add job.');
+            }
+        });
+
+        // Live Update for Job List
+        socket.on('job_added', (job) => {
+            const jobList = document.getElementById('jobList');
+            const jobDiv = document.createElement('div');
+            jobDiv.innerHTML = `
+                <p>
+                    <strong>ID:</strong> ${job.id}<br>
+                    <strong>Link:</strong> <a href="${job.link}" target="_blank">${job.link}</a><br>
+                    <strong>Description:</strong> ${job.description}<br>
+                    <strong>Status:</strong> ${job.status}<br>
+                    <strong>Resumes:</strong> ${job.resumes.join(', ')}<br>
+                </p>
+            `;
+            jobList.appendChild(jobDiv);
+        });
+    </script>
+</body>
+</html>

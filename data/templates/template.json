@@ -1,0 +1,392 @@
+{
+  "basics": {
+    "name": "Ankit Tandon",
+    "headline": "Certified Google Cloud Java Full Stack Developer",
+    "email": "ankit.me7@gmail.com",
+    "phone": "+91 85739 0766",
+    "location": "Noida, Uttar Pradesh",
+    "url": {
+      "label": "",
+      "href": "http://linkedin.com/in/ankittandonn"
+    },
+    "customFields": [],
+    "picture": {
+      "url": "",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p style=\"text-align: justify\">Certified Google Cloud Platform Associate Cloud Engineer with expertise in cloud-native solutions and modern DevOps practices. Experienced in leveraging tools like Docker, Kubernetes, and Helm to optimize application deployment, reducing setup time by 35% in production environments.</p><p style=\"text-align: justify\">Dynamic Java Developer with over 3 years of expertise in designing and deploying scalable, cloud-native applications. Proficient in Java 8, 11, and 17, with hands-on expertise in Spring Boot and CI/CD pipelines, driving automation to accelerate software delivery by 30%. Skilled in implementing automated testing frameworks to ensure maintainable, high-quality code.</p><p style=\"text-align: justify\"></p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "b4rycecqmjjg9j13z1zteids",
+          "visible": true,
+          "name": "Associate Cloud Engineer",
+          "issuer": "Google Cloud",
+          "date": "",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": "https://www.credly.com/badges/f081c094-90ad-48c0-b695-5d106cec5cd3/public_url"
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "j1j8vwnr106kio6p2g6mhmdz",
+          "visible": true,
+          "institution": "Dr. A.P.J. Abdul Kalam Technical University",
+          "studyType": "Master of Business Administration",
+          "area": "Information Technology",
+          "score": "",
+          "date": "August 2018 - July 2020",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "zb5c35f6pou3ry2le5ffcpky",
+          "visible": true,
+          "institution": "Dr. A.P.J. Abdul Kalam Technical University",
+          "studyType": "Bachelor of Technology",
+          "area": "Computer Science & Engineering",
+          "score": "",
+          "date": "August 2014 - July 2018",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "ky32xfrk77z83ejhwice95jd",
+          "visible": true,
+          "company": "IRIS SOFTWARE",
+          "position": "Software Engineer",
+          "location": "Noida, Uttar Pradesh",
+          "date": "April 2022 - Present",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "p4i4bc8xb49bw7aas6ac1n1y",
+          "visible": true,
+          "name": "German",
+          "description": "",
+          "level": 2
+        },
+        {
+          "id": "w50v4fr21ok52ilcp07ov55i",
+          "visible": true,
+          "name": "English",
+          "description": "",
+          "level": 4
+        },
+        {
+          "id": "xzz3avld6egnbpw7pgbca74t",
+          "visible": true,
+          "name": "Hindi",
+          "description": "",
+          "level": 3
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": []
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "projects",
+      "items": [
+        {
+          "id": "sk3nheky5dzt6dvfyy0v9vh0",
+          "visible": true,
+          "name": "Think or Swim - Cloud Migration",
+          "description": "Charles Schwab",
+          "date": "March 2024 - Present",
+          "summary": "<ul><li><p>Led the migration of 30+ applications to <strong>Kubernetes</strong>, designing tailored <strong>Helm charts </strong>and reducing setup time by <strong>35%</strong>.</p></li><li><p style=\"text-align: start\">Spearheaded the creation of Docker images tailored to application requirements, reducing resource consumption by 70%.</p></li><li><p style=\"text-align: start\">Developed and maintained Helm charts for Kubernetes, simplifying deployment processes and reducing setup time by 35%.</p></li><li><p style=\"text-align: start\">Actively participated in troubleshooting performance issues, identifying bottlenecks that reduced application latency by 25%.</p></li><li><p style=\"text-align: start\">Built and optimized <strong>CI/CD pipelines </strong>using <strong>Teamcity </strong>and <strong>Git</strong>, reducing deployment time by <strong>30% </strong>across cloud environments.</p></li></ul>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "luccfdrhn1djianzkd9wbyzi",
+          "visible": true,
+          "name": "Think or Swim – Metrics Migration",
+          "description": "Charles Schwab",
+          "date": "January 2023 - Feburary 2024",
+          "summary": "<ul><li><p>Oversaw the migration of the metrics system from an in-house MARS (Monitoring And Reporting System) to Prometheus &amp; Grafana, enhancing real-time visibility and alerting capabilities.</p></li><li><p style=\"text-align: start\">Integrated Prometheus metrics with Grafana, building a dashboard to monitor live server status for ThinkorSwim applications.</p></li><li><p style=\"text-align: start\">Established real-time alerting mechanisms in Prometheus, reducing response time to incidents by 25% and minimizing system downtime.</p></li><li><p style=\"text-align: start\">Conducted rigorous testing and data validation to confirm accuracy, enhancing management’s ability to monitor performance.</p></li></ul>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "q0s520sbhzqi21o92majw29r",
+          "visible": true,
+          "name": "Back Oﬃce Cash Application Migration",
+          "description": "TD Ameritrade ",
+          "date": "April 2022 - December 2022",
+          "summary": "<ul><li><p>Led development and migration for the Back Oﬃce Cash Application, responsible for transactional data handling across Trade, Wire, Tax Payments, Internal Transfers, and ACH transactions.</p></li><li><p style=\"text-align: start\">Developed Spring Batch jobs and leveraged PostgreSQL to orchestrate data extraction, transformation, and migration, improving data handling eﬃciency by 35%.</p></li><li><p style=\"text-align: start\">Implemented complex business rules and optimized batch processes using PostgreSQL features to ensure accuracy and reliability of transactional data.</p></li><li><p style=\"text-align: start\">Migrated 50M account records to a <strong>PostgreSQL-based platform</strong>, achieving <strong>99.98% accuracy </strong>through automated <strong>Spring Batch jobs </strong>and reconciliation processes.</p></li><li><p style=\"text-align: start\">Diagnosed and resolved performance bottlenecks, reducing application latency by <strong>25% </strong>through database indexing and query optimization in <strong>PostgreSQL</strong>.</p></li><li><p style=\"text-align: start\">Verified data integrity through reconciliation processes and cross-checked thousands of records in PostgreSQL to confirm successful migration.</p></li></ul>",
+          "keywords": [],
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "references",
+      "items": []
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": [
+        {
+          "id": "dbvabcl105df5bj14s6qmc32",
+          "visible": true,
+          "name": "Cloud",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "Docker",
+            "Kubernetes",
+            "Helm",
+            "Podman"
+          ]
+        },
+        {
+          "id": "rtd7052az3dzw9rwtgk59fw5",
+          "visible": true,
+          "name": "Java",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "Java 8",
+            "Java 11",
+            "Java 17"
+          ]
+        },
+        {
+          "id": "mula46oi7tl5pv42xkfma7oq",
+          "visible": true,
+          "name": "Spring Framework",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "Spring Boot",
+            "Spring Cloud",
+            "Spring Security"
+          ]
+        },
+        {
+          "id": "vag0tw71lsyer454eamfimbe",
+          "visible": true,
+          "name": "Database",
+          "description": "",
+          "level": 4,
+          "keywords": [
+            "Postgres",
+            "MySQL"
+          ]
+        },
+        {
+          "id": "gmv1xl9yvhqxhqw8bylmyrw4",
+          "visible": true,
+          "name": "Tools",
+          "description": "",
+          "level": 3,
+          "keywords": [
+            "Git",
+            "Intellij",
+            "Teamcity",
+            "Sonarlint",
+            "Harbor",
+            "Harness"
+          ]
+        },
+        {
+          "id": "now4w94qb6xmftrgnqvc9jcq",
+          "visible": true,
+          "name": "Monitoring and Logging",
+          "description": "",
+          "level": 3,
+          "keywords": [
+            "Prometheus",
+            "Grafana",
+            "Loki",
+            "Fluentd/Fluent Bit"
+          ]
+        }
+      ]
+    },
+    "custom": {
+      "j1xl109wvss39ngjtqpspl4j": {
+        "name": "Custom Section",
+        "columns": 1,
+        "separateLinks": true,
+        "visible": true,
+        "id": "j1xl109wvss39ngjtqpspl4j",
+        "items": []
+      }
+    }
+  },
+  "metadata": {
+    "template": "kakuna",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "projects",
+          "education",
+          "volunteer",
+          "references",
+          "custom.j1xl109wvss39ngjtqpspl4j"
+        ],
+        [
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": ".section {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 48,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#475569"
+    },
+    "typography": {
+      "font": {
+        "family": "IBM Plex Serif",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": true
+    },
+    "notes": ""
+  }
+}
